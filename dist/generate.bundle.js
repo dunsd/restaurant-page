@@ -1,0 +1,1 @@
+(()=>{"use strict";const e=document.createElement("div"),t=document.createElement("div"),c=document.createElement("div");e.className="leftSide",c.className="mainContent",t.className="rightSide"})();
