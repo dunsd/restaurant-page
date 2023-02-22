@@ -17,7 +17,6 @@ const homePage = function() {
     mainDiv.appendChild(homePara);
     mainDiv.appendChild(homeContent);
 
-    
 }
 
 export default homePage;

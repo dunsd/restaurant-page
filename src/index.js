@@ -1,5 +1,5 @@
 import './styles.css';
-import {generateFirstPage, mainMenu} from './generatePage.js';
+import {generateFirstPage} from './generatePage.js';
 import homePage from './home.js';
 import clear from './clear';
 
@@ -11,10 +11,20 @@ const homeButton = document.querySelector('.homeButton');
 const menuButton = document.querySelector('.menuButton');
 const aboutButton = document.querySelector('.aboutButton');
 
-homeButton.addEventListener('click', function(){
+homeButton.addEventListener('click', () => {
     clear();
-    //homePage();
+    homePage();
 });
 
+menuButton.addEventListener('click', () => {
+    console.log("menu page");
+    clear();
+    //homePage();
+})
 
+aboutButton.addEventListener('click', () => {
+    console.log("about page");
+    clear();
+    //homePage();
+})
 
