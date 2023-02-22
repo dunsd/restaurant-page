@@ -2,6 +2,8 @@ import './styles.css';
 import {generateFirstPage} from './generatePage.js';
 import homePage from './home.js';
 import clear from './clear';
+import aboutPage from './about';
+import menuPage from './menu';
 
 const content = document.querySelector('#content');
 
@@ -19,12 +21,12 @@ homeButton.addEventListener('click', () => {
 menuButton.addEventListener('click', () => {
     console.log("menu page");
     clear();
-    //homePage();
+    menuPage();
 })
 
 aboutButton.addEventListener('click', () => {
     console.log("about page");
     clear();
-    //homePage();
+    aboutPage();
 })
 
