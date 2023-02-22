@@ -110,6 +110,16 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
 
 /***/ }),
 
+/***/ "./src/about.js":
+/*!**********************!*\
+  !*** ./src/about.js ***!
+  \**********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst aboutPage = function() {\n    const content = document.querySelector('#content');\n    const mainDiv = document.querySelector('.mainDiv');\n    console.log(\"About Page\");\n\n    const aboutContent = document.createElement('div');\n    const aboutHeader = document.createElement('h2');\n    const aboutPara = document.createElement('p');\n\n    aboutHeader.className = \"aboutHeader\";\n    aboutContent.className = \"aboutContent\";\n    aboutPara.className = \"aboutPara\";\n\n    aboutHeader.textContent = \"Welcome to the about page!\";\n    aboutPara.textContent = \"An explanation of the about page!\";\n    mainDiv.appendChild(aboutHeader);\n    mainDiv.appendChild(aboutPara);\n    mainDiv.appendChild(aboutContent);\n\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (aboutPage);\n\n//# sourceURL=webpack://restaurant-page/./src/about.js?");
+
+/***/ }),
+
 /***/ "./src/clear.js":
 /*!**********************!*\
   !*** ./src/clear.js ***!
@@ -146,7 +156,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles.css */ \"./src/styles.css\");\n/* harmony import */ var _generatePage_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./generatePage.js */ \"./src/generatePage.js\");\n/* harmony import */ var _home_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./home.js */ \"./src/home.js\");\n/* harmony import */ var _clear__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./clear */ \"./src/clear.js\");\n\n\n\n\n\nconst content = document.querySelector('#content');\n\n\n(0,_generatePage_js__WEBPACK_IMPORTED_MODULE_1__.generateFirstPage)();\nconst homeButton = document.querySelector('.homeButton');\nconst menuButton = document.querySelector('.menuButton');\nconst aboutButton = document.querySelector('.aboutButton');\n\nhomeButton.addEventListener('click', () => {\n    (0,_clear__WEBPACK_IMPORTED_MODULE_3__[\"default\"])();\n    (0,_home_js__WEBPACK_IMPORTED_MODULE_2__[\"default\"])();\n});\n\nmenuButton.addEventListener('click', () => {\n    console.log(\"menu page\");\n    (0,_clear__WEBPACK_IMPORTED_MODULE_3__[\"default\"])();\n    //homePage();\n})\n\naboutButton.addEventListener('click', () => {\n    console.log(\"about page\");\n    (0,_clear__WEBPACK_IMPORTED_MODULE_3__[\"default\"])();\n    //homePage();\n})\n\n\n\n//# sourceURL=webpack://restaurant-page/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles.css */ \"./src/styles.css\");\n/* harmony import */ var _generatePage_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./generatePage.js */ \"./src/generatePage.js\");\n/* harmony import */ var _home_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./home.js */ \"./src/home.js\");\n/* harmony import */ var _clear__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./clear */ \"./src/clear.js\");\n/* harmony import */ var _about__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./about */ \"./src/about.js\");\n/* harmony import */ var _menu__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./menu */ \"./src/menu.js\");\n\n\n\n\n\n\n\nconst content = document.querySelector('#content');\n\n\n(0,_generatePage_js__WEBPACK_IMPORTED_MODULE_1__.generateFirstPage)();\nconst homeButton = document.querySelector('.homeButton');\nconst menuButton = document.querySelector('.menuButton');\nconst aboutButton = document.querySelector('.aboutButton');\n\nhomeButton.addEventListener('click', () => {\n    (0,_clear__WEBPACK_IMPORTED_MODULE_3__[\"default\"])();\n    (0,_home_js__WEBPACK_IMPORTED_MODULE_2__[\"default\"])();\n});\n\nmenuButton.addEventListener('click', () => {\n    console.log(\"menu page\");\n    (0,_clear__WEBPACK_IMPORTED_MODULE_3__[\"default\"])();\n    (0,_menu__WEBPACK_IMPORTED_MODULE_5__[\"default\"])();\n})\n\naboutButton.addEventListener('click', () => {\n    console.log(\"about page\");\n    (0,_clear__WEBPACK_IMPORTED_MODULE_3__[\"default\"])();\n    (0,_about__WEBPACK_IMPORTED_MODULE_4__[\"default\"])();\n})\n\n\n\n//# sourceURL=webpack://restaurant-page/./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/menu.js":
+/*!*********************!*\
+  !*** ./src/menu.js ***!
+  \*********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst menuPage = function() {\n    const content = document.querySelector('#content');\n    const mainDiv = document.querySelector('.mainDiv');\n    console.log(\"Menu Page\");\n\n    const menuContent = document.createElement('div');\n    const menuHeader = document.createElement('h2');\n    const menuPara = document.createElement('p');\n\n    menuHeader.className = \"menuHeader\";\n    menuContent.className = \"menuContent\";\n    menuPara.className = \"menuPara\";\n\n    menuHeader.textContent = \"Welcome to the menu page!\";\n    menuPara.textContent = \"An explanation of the menu page!\";\n    mainDiv.appendChild(menuHeader);\n    mainDiv.appendChild(menuPara);\n    mainDiv.appendChild(menuContent);\n\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (menuPage);\n\n//# sourceURL=webpack://restaurant-page/./src/menu.js?");
 
 /***/ })
 
