@@ -1,5 +1,7 @@
 import doughKnead from './images/doughKnead.jpg';
 import croqueMonsieur from "./images/croque-monsieur.jpg";
+import croissant from "./images/croissant.jpg";
+import frenchOnion from "./images/french-onion-soup.jpg";
 
 const menuPage = function() {
     const content = document.querySelector('#content');
@@ -10,43 +12,35 @@ const menuPage = function() {
     const menuHeader = document.createElement('h2');
     const menuPara = document.createElement('p');
 
-    const imageContainer = document.createElement('figure');
-    imageContainer.className = "menuImageContainer";
-    const backgroundImage = document.createElement('img');
-    const backgroundImageCaption = document.createElement('figcaption');
-    backgroundImageCaption.textContent = "Image by Nadya Spetnitskaya";
-    imageContainer.appendChild(backgroundImage);
-    imageContainer.appendChild(backgroundImageCaption);
-    backgroundImage.className = "menuImage";
-    backgroundImage.src = doughKnead;
-    backgroundImage.alt = "Dough being kneaded";
-
     menuHeader.className = "menuHeader";
     menuContent.className = "menuContent";
     menuPara.className = "menuPara";
 
-    menuHeader.textContent = "Welcome to the menu page!";
-    menuPara.textContent = "An explanation of the menu page!";
+    menuHeader.textContent = "Welcome to the menu!";
+    menuPara.textContent = "Here are some of our finest delicasies:";
     mainDiv.appendChild(menuHeader);
     mainDiv.appendChild(menuPara);
     mainDiv.appendChild(menuContent);
-    mainDiv.appendChild(imageContainer);
 
-    //createMenuItem();
+    createMenuItem(croqueMonsieur, "Croque Monsieur", "£10.99", "A Croque Monsieur");
+    createMenuItem(croissant, "A Croissant", "£3", "A Croissant");
+    createMenuItem(frenchOnion, "French Onion Soup", "£14.99", "A French Onion Soup");
 
 }
 
-function createMenuItem(image, text, price){
+function createMenuItem(image, name, price, alt){
+    const mainDiv = document.querySelector('.mainDiv');
+    mainDiv.className = "mainDiv";
     const newImageContainer = document.createElement('figure');
     newImageContainer.className = "menuImageContainer";
     const newMenuImage = document.createElement('img');
     const newMenuCaption = document.createElement('figcaption');
-    newMenuCaption.textContent = "Testing";
+    newMenuCaption.textContent = `${name}: ${price}`;
     newImageContainer.appendChild(newMenuImage);
     newImageContainer.appendChild(newMenuCaption);
     newMenuImage.className = "menuImage";
-    newMenuImage.src = doughKnead;
-    newMenuImage.alt = "Test alt";
+    newMenuImage.src = image;
+    newMenuImage.alt = alt;
 
     mainDiv.appendChild(newImageContainer);
 }
