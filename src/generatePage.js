@@ -15,11 +15,6 @@ menuButton.textContent = "Menu";
 aboutButton.textContent = "About";
 
 
-
-
-
-// homeButton.addEventListener('click', () => homePage());
-
 function generateFirstPage() {
 
     const content = document.querySelector('#content');
@@ -46,15 +41,6 @@ function generateFirstPage() {
     homePage();
 }
 
-
-function menuPage() {
-
-}
-
-function aboutPage() {
-
-}
-
 function createHeader() {
     const header = document.createElement('div');
     const nameBanner = document.createElement('h1');
@@ -62,9 +48,8 @@ function createHeader() {
     nameBanner.textContent = "Le Resto du reve";
     
     content.appendChild(header);
-    // header.appendChild(links);
     header.appendChild(nameBanner);
 
 }
 
-export { generateFirstPage, menuPage};
+export { generateFirstPage};

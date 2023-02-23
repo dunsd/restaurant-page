@@ -1,12 +1,13 @@
 body {
     height: 100vh;
     margin: 0;
+    font-family: 'Roboto', sans-serif;
 }
 #content {
     display: grid;
     margin: 0;
     grid-template-columns: 1fr 4fr 1fr;
-    grid-template-rows: 1fr 8fr 1fr;
+    grid-template-rows: 1fr 10fr 1fr;
     grid-template-areas: 
     "header header header"
     "left main right"
@@ -18,7 +19,9 @@ body {
 .links {
     display: flex;
     justify-content: space-around;
-    width: 100%;
+    padding: 30px;
+    border: solid 2px black; 
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .container {
@@ -27,11 +30,13 @@ body {
 
 .header {
     display: grid;
-    background-color: aquamarine;
-    height: 10vh;
+    background-color: #9F9C9B;
+    height: 5vh;
     width: auto;
     padding: 20px;
     grid-area: header;
+    align-content: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .mainContent {
@@ -43,18 +48,37 @@ body {
 .leftSide {
     display: grid;
     grid-area: left;
-    background-color: brown;
+    background-color: #D5D4D3;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     
 }
 
 .rightSide {
     display: grid;
     grid-area: right;
-    background-color: brown;
+    background-color: #D5D4D3;
 }
 
 .linkButton {
     height: 50px;
     width: 50px;
 
+}
+
+.menuImage {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.menuImageContainer {
+    width: clamp(200px, 80%, 600px);
+    height: clamp(200px, 80%, 600px);
+    max-width: 80%;
+    max-height: 80%;
+}
+
+.mainDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }

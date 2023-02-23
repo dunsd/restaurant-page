@@ -5,6 +5,7 @@ import clear from './clear';
 import aboutPage from './about';
 import menuPage from './menu';
 
+
 const content = document.querySelector('#content');
 
 
