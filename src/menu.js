@@ -22,9 +22,11 @@ const menuPage = function() {
     mainDiv.appendChild(menuPara);
     mainDiv.appendChild(menuContent);
 
+    createSubHeader("Main Menu");
     createMenuItem(croqueMonsieur, "Croque Monsieur", "£10.99", "A Croque Monsieur");
     createMenuItem(croissant, "Croissant", "£3", "A Croissant");
     createMenuItem(frenchOnion, "French Onion Soup", "£14.99", "A French Onion Soup");
+    createSubHeader("Desserts");
 
 }
 
@@ -46,6 +48,21 @@ function createMenuItem(image, name, price, alt){
     newMenuImage.alt = alt;
 
     mainDiv.appendChild(menuItem);
+}
+
+function createSubHeader(name){
+
+    const mainDiv = document.querySelector('.mainDiv');
+    const subHeaderContainer = document.createElement('div');
+    const subHeader = document.createElement('h2');
+
+    subHeaderContainer.className = "subHeaderContainer";
+    subHeader.className = "subHeader";
+
+    subHeader.textContent = name;
+
+    subHeaderContainer.appendChild(subHeader);
+    mainDiv.appendChild(subHeaderContainer);
 }
 
 export default menuPage;
