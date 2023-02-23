@@ -23,7 +23,7 @@ const menuPage = function() {
     mainDiv.appendChild(menuContent);
 
     createMenuItem(croqueMonsieur, "Croque Monsieur", "£10.99", "A Croque Monsieur");
-    createMenuItem(croissant, "A Croissant", "£3", "A Croissant");
+    createMenuItem(croissant, "Croissant", "£3", "A Croissant");
     createMenuItem(frenchOnion, "French Onion Soup", "£14.99", "A French Onion Soup");
 
 }
@@ -31,18 +31,21 @@ const menuPage = function() {
 function createMenuItem(image, name, price, alt){
     const mainDiv = document.querySelector('.mainDiv');
     mainDiv.className = "mainDiv";
+    const menuItem = document.createElement('div');
+    menuItem.className = "menuItem";
     const newImageContainer = document.createElement('figure');
     newImageContainer.className = "menuImageContainer";
     const newMenuImage = document.createElement('img');
     const newMenuCaption = document.createElement('figcaption');
     newMenuCaption.textContent = `${name}: ${price}`;
+    menuItem.appendChild(newImageContainer);
     newImageContainer.appendChild(newMenuImage);
     newImageContainer.appendChild(newMenuCaption);
     newMenuImage.className = "menuImage";
     newMenuImage.src = image;
     newMenuImage.alt = alt;
 
-    mainDiv.appendChild(newImageContainer);
+    mainDiv.appendChild(menuItem);
 }
 
 export default menuPage;

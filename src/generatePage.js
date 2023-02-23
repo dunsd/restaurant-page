@@ -1,5 +1,5 @@
 import homePage from "./home";
-
+import breadBackground from "./images/bread-background.jpg";
 
 
 const links = document.createElement('div');
