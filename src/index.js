@@ -6,8 +6,9 @@ import aboutPage from './about';
 import menuPage from './menu';
 
 
-const content = document.querySelector('#content');
-
+//const content = document.querySelector('#content');
+const content = document.createElement('div');
+content.id = "content";
 
 generateFirstPage();
 const homeButton = document.querySelector('.homeButton');
