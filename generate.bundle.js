@@ -16,7 +16,7 @@
   \*****************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"generateFirstPage\": () => (/* binding */ generateFirstPage)\n/* harmony export */ });\n/* harmony import */ var _home__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./home */ \"./src/home.js\");\n\n\n\n\nconst links = document.createElement('div');\nlinks.className = \"links\";\nconst homeButton = document.createElement('button');\nconst menuButton = document.createElement('button');\nconst aboutButton = document.createElement('button');\nhomeButton.className = \"homeButton\";\nmenuButton.className = \"menuButton\";\naboutButton.className = \"aboutButton\";\nhomeButton.textContent = \"Home\";\nmenuButton.textContent = \"Menu\";\naboutButton.textContent = \"About\";\n\n\nfunction generateFirstPage() {\n\n    const content = document.querySelector('#content');\n    const leftSide = document.createElement('div');\n    const rightSide = document.createElement('div');\n    const mainContent = document.createElement('div');\n    leftSide.className = ('leftSide');\n    mainContent.className = ('mainContent');\n    rightSide.className = ('rightSide');\n\n    const mainDiv = document.createElement('div');\n    mainDiv.className = \"mainDiv\";\n\n    content.textContent = \"\";\n    createHeader();\n    content.appendChild(leftSide);\n    content.appendChild(mainContent);\n    content.appendChild(rightSide);\n    mainContent.appendChild(links);\n    links.appendChild(homeButton);\n    links.appendChild(menuButton);\n    links.appendChild(aboutButton);\n    mainContent.appendChild(mainDiv);\n    (0,_home__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\n}\n\nfunction createHeader() {\n    const header = document.createElement('div');\n    const nameBanner = document.createElement('h1');\n    header.className = ('header');\n    nameBanner.textContent = \"Le Resto du reve\";\n    \n    content.appendChild(header);\n    header.appendChild(nameBanner);\n\n}\n\n\n\n//# sourceURL=webpack://restaurant-page/./src/generatePage.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"generateFirstPage\": () => (/* binding */ generateFirstPage)\n/* harmony export */ });\n/* harmony import */ var _home__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./home */ \"./src/home.js\");\n/* harmony import */ var _images_bread_background_jpg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./images/bread-background.jpg */ \"./src/images/bread-background.jpg\");\n\n\n\n\nconst links = document.createElement('div');\nlinks.className = \"links\";\nconst homeButton = document.createElement('button');\nconst menuButton = document.createElement('button');\nconst aboutButton = document.createElement('button');\nhomeButton.className = \"homeButton\";\nmenuButton.className = \"menuButton\";\naboutButton.className = \"aboutButton\";\nhomeButton.textContent = \"Home\";\nmenuButton.textContent = \"Menu\";\naboutButton.textContent = \"About\";\n\n\nfunction generateFirstPage() {\n\n    const content = document.querySelector('#content');\n    const leftSide = document.createElement('div');\n    const rightSide = document.createElement('div');\n    const mainContent = document.createElement('div');\n    leftSide.className = ('leftSide');\n    mainContent.className = ('mainContent');\n    rightSide.className = ('rightSide');\n\n    const mainDiv = document.createElement('div');\n    mainDiv.className = \"mainDiv\";\n\n    content.textContent = \"\";\n    createHeader();\n    content.appendChild(leftSide);\n    content.appendChild(mainContent);\n    content.appendChild(rightSide);\n    mainContent.appendChild(links);\n    links.appendChild(homeButton);\n    links.appendChild(menuButton);\n    links.appendChild(aboutButton);\n    mainContent.appendChild(mainDiv);\n    (0,_home__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\n}\n\nfunction createHeader() {\n    const header = document.createElement('div');\n    const nameBanner = document.createElement('h1');\n    header.className = ('header');\n    nameBanner.textContent = \"Le Resto du reve\";\n    \n    content.appendChild(header);\n    header.appendChild(nameBanner);\n\n}\n\n\n\n//# sourceURL=webpack://restaurant-page/./src/generatePage.js?");
 
 /***/ }),
 
@@ -27,6 +27,16 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst homePage = function() {\n    const content = document.querySelector('#content');\n    const mainDiv = document.querySelector('.mainDiv');\n    console.log(\"Home Page\");\n\n    const homeContent = document.createElement('div');\n    const homeHeader = document.createElement('h2');\n    const homePara = document.createElement('p');\n\n    homeHeader.className = \"homeHeader\";\n    homeContent.className = \"homeContent\";\n    homePara.className = \"homePara\";\n\n    homeHeader.textContent = \"Welcome to the main page!\";\n    homePara.textContent = \"An explanation of the main page!\";\n    mainDiv.appendChild(homeHeader);\n    mainDiv.appendChild(homePara);\n    mainDiv.appendChild(homeContent);\n\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (homePage);\n\n//# sourceURL=webpack://restaurant-page/./src/home.js?");
+
+/***/ }),
+
+/***/ "./src/images/bread-background.jpg":
+/*!*****************************************!*\
+  !*** ./src/images/bread-background.jpg ***!
+  \*****************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"41b281de7402d0ad6faa.jpg\";\n\n//# sourceURL=webpack://restaurant-page/./src/images/bread-background.jpg?");
 
 /***/ })
 
@@ -69,6 +79,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/global */
+/******/ 	(() => {
+/******/ 		__webpack_require__.g = (function() {
+/******/ 			if (typeof globalThis === 'object') return globalThis;
+/******/ 			try {
+/******/ 				return this || new Function('return this')();
+/******/ 			} catch (e) {
+/******/ 				if (typeof window === 'object') return window;
+/******/ 			}
+/******/ 		})();
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
@@ -83,6 +105,26 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 			}
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		var scriptUrl;
+/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
+/******/ 		var document = __webpack_require__.g.document;
+/******/ 		if (!scriptUrl && document) {
+/******/ 			if (document.currentScript)
+/******/ 				scriptUrl = document.currentScript.src
+/******/ 			if (!scriptUrl) {
+/******/ 				var scripts = document.getElementsByTagName("script");
+/******/ 				if(scripts.length) scriptUrl = scripts[scripts.length - 1].src
+/******/ 			}
+/******/ 		}
+/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
+/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
+/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
+/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
+/******/ 		__webpack_require__.p = scriptUrl;
 /******/ 	})();
 /******/ 	
 /************************************************************************/
