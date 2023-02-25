@@ -16,7 +16,7 @@ body {
     grid-template-areas: 
     "header header header"
     "left main right"
-    "left main right";
+    "footer footer footer";
     width: 100%;
     min-height: 100vh;
     height: 100%;
@@ -47,6 +47,19 @@ body {
     align-content: center;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     height: 80px;
+    border-bottom: solid black 2px;
+}
+
+.footer {
+    display: grid;
+    background-color: #9F9C9B;
+    width: auto;
+    padding: 20px;
+    grid-area: footer;
+    align-content: center;
+    justify-content: end;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    height: 20px;
     border-bottom: solid black 2px;
 }
 

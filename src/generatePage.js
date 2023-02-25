@@ -30,6 +30,7 @@ function generateFirstPage() {
 
     content.textContent = "";
     createHeader();
+    createFooter();
     content.appendChild(leftSide);
     content.appendChild(mainContent);
     content.appendChild(rightSide);
@@ -50,6 +51,16 @@ function createHeader() {
     content.appendChild(header);
     header.appendChild(nameBanner);
 
+}
+
+function createFooter() {
+    const footer = document.createElement('div');
+    const footerName = document.createElement('p');
+    footer.className = ('footer');
+    footerName.className = ('footerName');
+    footerName.textContent = "Food photos from Unsplash";
+    footer.appendChild(footerName);
+    content.appendChild(footer);
 }
 
 export { generateFirstPage};
